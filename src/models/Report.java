@@ -48,6 +48,12 @@ public class Report {
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
 
+    @Column(name = "attend", nullable = false)
+    private String attend;
+
+    @Column(name = "taikin", nullable = false)
+    private String taikin;
+
     public Integer getId() {
         return id;
     }
@@ -103,5 +109,22 @@ public class Report {
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
     }
+
+    public String getAttend(){
+        return attend;
+    }
+
+    public void setAttend(String attend){
+        this.attend = attend;
+    }
+
+    public String getTaikin(){
+        return taikin;
+    }
+
+    public void setTaikin(String taikin){
+        this.taikin = taikin;
+    }
+
 
 }
